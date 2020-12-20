@@ -3,7 +3,8 @@ import styled from "styled-components"
 import Wave from "../components/wave"
 
 const SectionGroup = styled.div`
-    background: url(${props => props.image});
+    background: linear-gradient(45deg, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), 
+    url(${props => props.image});
     height: 800px;
     background-size: cover;
     display: grid;

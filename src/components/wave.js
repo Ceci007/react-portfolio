@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Wave = () => (
     <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,4 +15,4 @@ const Wave = () => (
     </svg>
 )
 
-export default Wave
+export default Wave;

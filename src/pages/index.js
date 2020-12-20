@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, animateScroll as scroll } from "react-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from "../components/layout"
 import sketch from "../images/logo-sketch.png"
@@ -43,49 +44,62 @@ const SectionCellGroup = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <div className="Hero">
-      <div className="HeroGroup">
-        <h1>Learn to <br /> Design and Code <span>React apps</span></h1>
-        <p>Complete courses about the best tools and design systems. Prototype and build apps with React.</p>
-        <Link to="/page-2/">Watch the video</Link>
-        <div className="logos">
-          <img src={sketch} width="50" />
-          <img src={figma} width="50" />
-          <img src={studio} width="50" />
-          <img src={framer} width="50" />
-          <img src={react} width="50" />
-          <img src={swift} width="50" />
+    <SEO title="Home"/>
+    <ScrollAnimation animateIn="fadeInUp">
+      <div className="Hero" id="home">
+        <div className="HeroGroup">
+          <h1>Frontend Engineer <br /><span>React Developer</span></h1>
+          <p>Complete app development with the best tools and design systems</p>
+          <Link
+            to="about-me"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration= {500} >
+            Read more about me
+          </Link>
+          <div className="logos">
+            <img src={sketch} width="50" />
+            <img src={figma} width="50" />
+            <img src={studio} width="50" />
+            <img src={framer} width="50" />
+            <img src={react} width="50" />
+          </div>
+          <Wave />
         </div>
-        <Wave />
+      </div>   
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="fadeInUp">
+      <div className="Cards" id="about-me">
+        <h2>11 courses, more coming</h2>
+        <div className="CardGroup">
+        <Card 
+        title="Design System"
+        text="10 sections"
+        image={require("../images/wallpaper.jpg")} />
+        <Card 
+        title="React for Designers"
+        text="12 sections"
+        image={require("../images/wallpaper2.jpg")} />
+        <Card 
+        title="Sound Design"
+        text="5 sections"
+        image={require("../images/wallpaper3.jpg")} />
+        <Card 
+        title="ARKit 2"
+        text="10 sections"
+        image={require("../images/wallpaper4.jpg")} />
+        </div>
       </div>
-    </div>   
-    <div className="Cards">
-      <h2>11 courses, more coming</h2>
-      <div className="CardGroup">
-      <Card 
-      title="Design System"
-      text="10 sections"
-      image={require("../images/wallpaper.jpg")} />
-      <Card 
-      title="React for Designers"
-      text="12 sections"
-      image={require("../images/wallpaper2.jpg")} />
-      <Card 
-      title="Sound Design"
-      text="5 sections"
-      image={require("../images/wallpaper3.jpg")} />
-      <Card 
-      title="ARKit 2"
-      text="10 sections"
-      image={require("../images/wallpaper4.jpg")} />
-      </div>
-    </div>
+    </ScrollAnimation>
     <Section 
-      image={require('../images/wallpaper2.jpg')}
+      image={require('../images/hero-2.jpg')}
       logo={require('../images/logo-react.png')}
-      title="React for Designers"
-      text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
+      title="What is React?"
+      text={`React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. 
+      It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page 
+      or mobile applications. However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of 
+      additional libraries for state management and routing. Redux and React Router are respective examples of such libraries.`}
     />
     <SectionCaption>12 sections - 6 hours</SectionCaption>
     <SectionCellGroup>

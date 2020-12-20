@@ -26,6 +26,12 @@
 .Header a {
     color: white;
     font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-icon {
+    margin-right: 0.7rem;
 }
 
 .Header button {

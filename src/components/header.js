@@ -1,5 +1,7 @@
-import { Link } from "gatsby"
 import React, { Component } from "react"
+import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserGraduate, faTh, faAward, faArchive } from '@fortawesome/free-solid-svg-icons'
 import logo from "../images/logo-designcode.svg"
 import "./reset.css"
 import "./header.css";
@@ -31,11 +33,22 @@ class Header extends Component {
     return( 
   <div className={this.state.hasScrolled ? "Header HeaderScrolled" : "Header"}>
     <div className="HeaderGroup">
-      <Link to="/"><img src={logo} width="30" /></Link>
-      <Link to="/courses">Courses</Link>
-      <Link to="/downloads">Downloads</Link>
-      <Link to="/workshops">Workshops</Link>
-      <Link to="/buy"><button>Buy</button></Link>
+    <Link
+      /*activeClass="navbar-nav__active"*/
+      to="home"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration= {500} ><img src={logo} width="30" /></Link>
+      <Link
+        to="about-me"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration= {500} ><FontAwesomeIcon icon={faUserGraduate} className="nav-icon" /> About Me</Link>
+      <Link to="/downloads"><FontAwesomeIcon icon={faTh} className="nav-icon" /> Skills</Link>
+      <Link to="/workshops"><FontAwesomeIcon icon={faAward} className="nav-icon" /> credentials</Link>
+      <Link to="/buy"><button><FontAwesomeIcon icon={faArchive} className="nav-icon" /> Portfolio</button></Link>
     </div>
   </div>)
   }
