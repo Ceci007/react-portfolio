@@ -139,7 +139,7 @@
 }
 
 .skill .percent #color-5 {
-  background: linear-gradient(45deg, #ffee54, var(--color-red));
+  background: linear-gradient(45deg, #ffee54, red);
 }
 
 .skill .percent #color-6 {
