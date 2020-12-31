@@ -17,6 +17,7 @@ import StaticData from "../../static-data.json"
 import Cell from "../components/cell"
 import AboutMe from "../components/aboutMe";
 import Skills from "../components/skills";
+import CredentialsCarousel from "../components/credentialsCarousel";
 import styled from "styled-components"
 
 const SectionCaption = styled.p`
@@ -92,6 +93,9 @@ const IndexPage = () => (
         <Skills />
       </ScrollAnimation>
     </div>
+    <ScrollAnimation animateIn="fadeInUp" id="credentials">
+      <CredentialsCarousel />
+    </ScrollAnimation>
   </Layout>
 )
 
