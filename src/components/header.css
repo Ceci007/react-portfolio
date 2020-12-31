@@ -6,6 +6,7 @@
     margin-top: 0;
     z-index: 100;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-sizing: border-box;
 }
 
 .HeaderScrolled {

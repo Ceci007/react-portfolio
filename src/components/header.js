@@ -46,7 +46,12 @@ class Header extends Component {
         smooth={true}
         offset={-70}
         duration= {500} ><FontAwesomeIcon icon={faUserGraduate} className="nav-icon" /> About Me</Link>
-      <Link to="/downloads"><FontAwesomeIcon icon={faTh} className="nav-icon" /> Skills</Link>
+       <Link
+        to="skills"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration= {500} ><FontAwesomeIcon icon={faTh} className="nav-icon" /> Skills</Link>
       <Link to="/workshops"><FontAwesomeIcon icon={faAward} className="nav-icon" /> credentials</Link>
       <Link to="/buy"><button><FontAwesomeIcon icon={faArchive} className="nav-icon" /> Portfolio</button></Link>
     </div>

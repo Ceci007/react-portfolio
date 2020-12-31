@@ -1,0 +1,120 @@
+.sobre-mi {
+  background-color: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre-mi__content {
+  padding: 6rem 4rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.sobre-mi__box:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.name {
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.sobre-mi__card {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 56.25em) /* 900px */ {
+  .sobre-mi__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sobre-mi__box {
+    width: 80%;
+    margin-right: 2rem;
+  }
+}
+
+.sobre-mi__card p {
+  color: var(--grey-dark-4);
+}
+
+.mi-top {
+  display: flex;
+  align-items: center;
+  font-family: "Lato Bold", sans-serif;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.ceci-img-box {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.ceci-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.mi-top-i {
+  position: absolute;
+  right: 3rem;
+  font-size: 5rem;
+  color: #FF405B;
+}
+
+@media only screen and (max-width: 30em) /* 480px */ {
+  .mi-top-i {
+    right: 1rem;
+    font-size: 2rem;
+  }
+
+  .ceci-img-box {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 22.5em) /* 360px */ {
+  .mi-top-i {
+    right: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.sobre-mi__list {
+  margin-top: 2rem;
+  list-style: none;
+  color: var(--grey-dark-4);
+  padding-left: 0;
+}
+
+.sobre-mi__list li {
+  margin-bottom: 2rem;
+}
+
+.icon-grey {
+  margin-right: 2rem;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 0.2rem;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}

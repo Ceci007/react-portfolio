@@ -1,0 +1,339 @@
+/*------------------- SKILLS --------------------*/
+.skills {
+  width: 100%;
+  padding: 3rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+.skill-box {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-card {
+  width: 40rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 2rem;
+  margin-bottom: 4rem;
+  transition: transform 0.5s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .skill-card:hover {
+    transform: scale(1);
+  }
+}
+
+.skill-img-box {
+  width: 40rem;
+  height: 30rem;
+}
+
+.skill-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.skill-card-body {
+  padding: 2rem;
+}
+
+.skill-card-body p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  margin: 2rem 0;
+  padding: 2.4rem 1rem 1.8rem;
+  background: linear-gradient(#616161 0%, #333 10%, #222);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 0.2rem solid #000;
+  transition: 0.5s;
+}
+
+.skill:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.skill .value {
+  position: relative;
+  width: 4rem;
+  color: #fff;
+  margin-top: -0.5rem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.skill .percent {
+  position: relative;
+  width: 28rem;
+  height: 2rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  background: #151515;
+  margin: 0;
+  box-shadow: inset 0 0 1rem #000;
+  overflow: hidden;
+}
+
+.skill .percent .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: inset 0 0 0.2rem #000;
+  animation: skillbar 4s ease-in-out forwards infinite;
+}
+
+@keyframes skillbar {
+  from {
+    width: 0;
+  }
+}
+
+.skill .percent #color-1 {
+  background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+
+.skill .percent #color-2 {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.skill .percent #color-3 {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.skill .percent #color-4 {
+  background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+
+.skill .percent #color-5 {
+  background: linear-gradient(45deg, #ffee54, var(--color-red));
+}
+
+.skill .percent #color-6 {
+  background: linear-gradient(45deg, #ffee54, #33ff00);
+}
+
+@media only screen and (max-width: 25em) /* 400px */ {
+  .skill-img-box {
+    width: 35rem;
+    height: 25rem;
+  }
+
+  .skill-img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*------------------- LANGUAGE --------------------*/
+.idiomas {
+  width: 100%;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.container-idioma:not(:last-child) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.progress-container {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.progressbar__track {
+  fill: transparent;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 3px;
+}
+
+.progressbar__thumb-1 {
+  fill: transparent;
+  stroke-width: 3px;
+  stroke-dasharray: 0 calc(30 * 2 * 3.141593);
+  stroke-linecap: round;
+  animation-name: progress-1;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.3, 1, 0.3, 1);
+  transform: rotate(-89deg);
+  transform-origin: 50% 50%;
+}
+
+.progressbar__thumb-2 {
+  fill: transparent;
+  stroke-width: 3px;
+  stroke-dasharray: 0 calc(30 * 2 * 3.141593);
+  stroke-linecap: round;
+  animation-name: progress-2;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.3, 1, 0.3, 1);
+  transform: rotate(-89deg);
+  transform-origin: 50% 50%;
+}
+
+.progressbar__thumb-3 {
+  fill: transparent;
+  stroke-width: 3px;
+  stroke-dasharray: 0 calc(30 * 2 * 3.141593);
+  stroke-linecap: round;
+  animation-name: progress-3;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.3, 1, 0.3, 1);
+  transform: rotate(-89deg);
+  transform-origin: 50% 50%;
+}
+
+.progressbar__thumb--track-1 {
+  stroke: var(--grey-light-1);
+  animation-duration: 1.8s;
+}
+
+.progressbar__thumb--track-2 {
+  stroke: var(--grey-light-1);
+  animation-duration: 1.6s;
+}
+
+.progressbar__thumb--track-3 {
+  stroke: var(--color-primary);
+  animation-duration: 1.2s;
+}
+
+.progress-content {
+  text-align: center;
+}
+
+.icon-content {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress__value {
+  color: var(--color-primary);
+  font-size: 1.5em;
+  position: relative;
+  margin-top: 23rem;
+  display: inline-block;
+  transform: scale(0);
+  animation: pulse 400ms 1.6s forwards;
+}
+
+.progress__value::before {
+  content: "%";
+  font-size: 0.5em;
+  position: absolute;
+  top: 4px;
+  left: -12px;
+}
+
+.progress__text {
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1px;
+  max-height: 0;
+  overflow-y: hidden;
+  animation: flyin 500ms 1.9s forwards;
+}
+
+@keyframes progress-1 {
+  to {
+    stroke-dasharray: 200;
+  }
+}
+
+@keyframes progress-2 {
+  to {
+    stroke-dasharray: 175;
+  }
+}
+
+@keyframes progress-3 {
+  to {
+    stroke-dasharray: 100;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes flyin {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 20px;
+    opacity: 0.5;
+  }
+}

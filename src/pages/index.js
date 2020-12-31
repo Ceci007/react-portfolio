@@ -15,11 +15,13 @@ import Section from "../components/section"
 import Wave from "../components/wave"
 import StaticData from "../../static-data.json"
 import Cell from "../components/cell"
+import AboutMe from "../components/aboutMe";
+import Skills from "../components/skills";
 import styled from "styled-components"
 
 const SectionCaption = styled.p`
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #94a4ba;
   text-align: center;
@@ -71,25 +73,8 @@ const IndexPage = () => (
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInUp">
       <div className="Cards" id="about-me">
-        <h2>11 courses, more coming</h2>
-        <div className="CardGroup">
-        <Card 
-        title="Design System"
-        text="10 sections"
-        image={require("../images/wallpaper.jpg")} />
-        <Card 
-        title="React for Designers"
-        text="12 sections"
-        image={require("../images/wallpaper2.jpg")} />
-        <Card 
-        title="Sound Design"
-        text="5 sections"
-        image={require("../images/wallpaper3.jpg")} />
-        <Card 
-        title="ARKit 2"
-        text="10 sections"
-        image={require("../images/wallpaper4.jpg")} />
-        </div>
+        <h2>About me info, you can read more about me on my resume</h2>
+        <AboutMe />
       </div>
     </ScrollAnimation>
     <Section 
@@ -101,10 +86,12 @@ const IndexPage = () => (
       or mobile applications. However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of 
       additional libraries for state management and routing. Redux and React Router are respective examples of such libraries.`}
     />
-    <SectionCaption>12 sections - 6 hours</SectionCaption>
-    <SectionCellGroup>
-    {StaticData.cells.map((cell) => (<Cell key={cell.title} title={cell.title} image={cell.image} />))}
-    </SectionCellGroup>
+    <div id="skills">
+      <SectionCaption>My Skills</SectionCaption>
+      <ScrollAnimation animateIn="fadeInUp">
+        <Skills />
+      </ScrollAnimation>
+    </div>
   </Layout>
 )
 

@@ -49,7 +49,9 @@ const SectionTitle = styled.h3`
 
 const SectionText = styled.p`
     color: white;
-
+    font-size: 2.4rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 1rem;
     
     @media (max-width: 720px) {
         text-align: center;
