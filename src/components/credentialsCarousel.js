@@ -33,6 +33,7 @@ class CredentialsCarousel extends Component {
 
         return (  
             <Carousel responsive={responsive} ssr={true}
+            className="padding-box"
             autoPlay={this.props.deviceType !== "mobile" ? true : false}
             autoPlaySpeed={3000} infinite={true} transitionDuration={1000}
             swipeable={false}

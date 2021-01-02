@@ -5,15 +5,15 @@ import Wave from "../components/wave"
 const SectionGroup = styled.div`
     background: linear-gradient(45deg, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), 
     url(${props => props.image});
-    height: 800px;
+    height: 1000px;
     background-size: cover;
     display: grid;
     grid-template-rows: 300px auto;
     grid-gap: 20px;
     position: relative;
 
-    @media (max-width: 640px) {
-        height: 820px;
+    @media (max-width: 900px) {
+        height: 1200px;
     }
 `
 const SectionLogo = styled.img`

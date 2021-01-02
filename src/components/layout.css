@@ -21,7 +21,7 @@
 .Hero h1 {
   margin: 0;
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.2;
   opacity: 0;
   animation: heroAnimation;

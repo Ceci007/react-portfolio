@@ -4,6 +4,14 @@ import styled from "styled-components"
 const FooterMain = styled.div`
     margin: 0; 
     padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    @media only screen and (max-width:  87.5em), only screen and (hover: none) {
+        width: 100%;
+        box-sizing: border-box;
+    }
 `
 
 const FooterGroup = styled.div`
@@ -11,6 +19,8 @@ const FooterGroup = styled.div`
     padding: 50px 0;
     display: grid;
     grid-gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
 `
 const Text = styled.p`
     font-size: 24px;
@@ -18,19 +28,27 @@ const Text = styled.p`
     color: #486791;
     max-width: 500px;
     margin: 0 auto;
+
+    @media only screen and (max-width:  87.5em), only screen and (hover: none) {
+        font-size: 20px;
+        width: 250px;
+    }
 `
 
 const FooterLink = styled.p`
     color: #5334f5;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     font-size: 20px;
     text-align: justify;
     cursor: pointer;
+    text-decoration: none;
 `
 
 const Button = styled.button`
     font-size: 24px;
+    display: flex;
+    box-sizing: border-box;
     color: white;
     border: none;
     padding: 16px 60px;
@@ -52,10 +70,15 @@ const LinkGroup = styled.div`
     width: 500px;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     align-items: center;
+    justify-items: center;
     justify-content: center;
+
+    @media only screen and (max-width:  87.5em), only screen and (hover: none) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     a {
         color: #5334F5;
@@ -73,21 +96,26 @@ const LinkGroup = styled.div`
 const Copyright = styled.div`
     color: #486791;
     max-width: 500px;
+    width: 500px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
+
+    @media only screen and (max-width:  87.5em), only screen and (hover: none) {
+        width: 250px;
+        box-sizing: border-box;
+    }
 `
 
 const Footer = () => (
     <FooterMain>
         <FooterGroup>
-            <Text>Tweet “Prototype and build apps with React and Swift. New courses by @MengTo”</Text>
+            <Text>“Prototype and build apps with React.js and React Native”</Text>
             <Button>Tweet</Button>
             <LinkGroup>
-                <FooterLink>Home</FooterLink>
-                <FooterLink>About</FooterLink>
-                <FooterLink>Privacy</FooterLink>
-                <FooterLink>Courses</FooterLink>
-                <FooterLink>Contact</FooterLink>
+                <a href="https://github.com/Ceci007" target="_blank"><FooterLink>Github</FooterLink></a>
+                <a href="https://twitter.com/CeciDeveloper" target="_blank"><FooterLink>Twitter</FooterLink></a>
+                <a href="https://www.linkedin.com/in/cecilia-ben%C3%ADtez/" target="_blank"><FooterLink>Linkedin</FooterLink></a>
             </LinkGroup>
             <Copyright> © {new Date().getFullYear()}, for a better web</Copyright> 
         </FooterGroup>

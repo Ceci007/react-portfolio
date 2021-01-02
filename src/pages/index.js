@@ -8,16 +8,13 @@ import figma from "../images/logo-figma.png"
 import studio from "../images/logo-studio.png"
 import framer from "../images/logo-framer.png"
 import react from "../images/logo-react.png"
-import swift from "../images/logo-swift.png"
 import SEO from "../components/seo"
-import Card from "../components/card"
 import Section from "../components/section"
 import Wave from "../components/wave"
-import StaticData from "../../static-data.json"
-import Cell from "../components/cell"
 import AboutMe from "../components/aboutMe";
 import Skills from "../components/skills";
 import CredentialsCarousel from "../components/credentialsCarousel";
+import Portfolio from "../components/portfolio";
 import styled from "styled-components"
 
 const SectionCaption = styled.p`
@@ -32,19 +29,6 @@ const SectionCaption = styled.p`
   z-index: 50;
 `
 
-const SectionCellGroup = styled.div`
-  max-width: 800px;
-  margin: 0 auto 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  padding: 0 20px;
-
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
@@ -52,13 +36,14 @@ const IndexPage = () => (
       <div className="Hero" id="home">
         <div className="HeroGroup">
           <h1>Frontend Engineer <br /><span>React Developer</span></h1>
-          <p>Complete app development with the best tools and design systems</p>
+          <p>Complete app development, with the best tools and design systems</p><br />
           <Link
             to="about-me"
             spy={true}
             smooth={true}
             offset={-70}
-            duration= {500} >
+            duration= {500}
+            className="about-button" >
             Read more about me
           </Link>
           <div className="logos">
@@ -82,10 +67,9 @@ const IndexPage = () => (
       image={require('../images/hero-2.jpg')}
       logo={require('../images/logo-react.png')}
       title="What is React?"
-      text={`React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. 
+      text={`React (also known as React.js) is an open-source, front end, JavaScript library for building user interfaces or UI components. 
       It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page 
-      or mobile applications. However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of 
-      additional libraries for state management and routing. Redux and React Router are respective examples of such libraries.`}
+      or mobile applications.`}
     />
     <div id="skills">
       <SectionCaption>My Skills</SectionCaption>
@@ -93,9 +77,14 @@ const IndexPage = () => (
         <Skills />
       </ScrollAnimation>
     </div>
-    <ScrollAnimation animateIn="fadeInUp" id="credentials">
-      <CredentialsCarousel />
-    </ScrollAnimation>
+    <div id="credentials">
+      <ScrollAnimation animateIn="fadeInUp" >
+        <CredentialsCarousel />
+      </ScrollAnimation>
+    </div>
+    <div id="portfolio">
+      <Portfolio />
+    </div>
   </Layout>
 )
 
