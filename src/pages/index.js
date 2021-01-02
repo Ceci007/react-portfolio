@@ -38,7 +38,7 @@ const IndexPage = () => (
           <h1>Frontend Engineer <br /><span>React Developer</span></h1>
           <p>Complete app development, with the best tools and design systems</p><br />
           <Link
-            to="about-me"
+            to="about-me" 
             spy={true}
             smooth={true}
             offset={-70}
