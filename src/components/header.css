@@ -66,3 +66,21 @@
         display: none;
     }
 }
+
+@media (max-width: 25em) {
+    .Header {
+        padding: 1.5rem 0;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .Header a:nth-child(4) {
+        display: none;
+    }
+
+    .Header a:nth-child(3) {
+        display: none;
+    }
+}

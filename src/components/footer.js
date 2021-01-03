@@ -4,14 +4,9 @@ import styled from "styled-components"
 const FooterMain = styled.div`
     margin: 0; 
     padding: 0;
+    display: block;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
-
-    @media only screen and (max-width:  87.5em), only screen and (hover: none) {
-        width: 100%;
-        box-sizing: border-box;
-    }
 `
 
 const FooterGroup = styled.div`
@@ -26,12 +21,12 @@ const Text = styled.p`
     font-size: 24px;
     font-weight: 600; 
     color: #486791;
-    max-width: 500px;
+    max-width: 60%;
     margin: 0 auto;
 
     @media only screen and (max-width:  87.5em), only screen and (hover: none) {
         font-size: 20px;
-        width: 250px;
+        width: 80%;
     }
 `
 
@@ -67,7 +62,7 @@ const Button = styled.button`
 `
 
 const LinkGroup = styled.div`
-    width: 500px;
+    width: 80%;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,14 +90,13 @@ const LinkGroup = styled.div`
 
 const Copyright = styled.div`
     color: #486791;
-    max-width: 500px;
-    width: 500px;
+    max-width: 60%;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
 
     @media only screen and (max-width:  87.5em), only screen and (hover: none) {
-        width: 250px;
+        width: 80%;
         box-sizing: border-box;
     }
 `
