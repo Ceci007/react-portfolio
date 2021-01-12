@@ -16,6 +16,7 @@ import Skills from "../components/skills";
 import CredentialsCarousel from "../components/credentialsCarousel";
 import Portfolio from "../components/portfolio";
 import styled from "styled-components"
+import './index.css'
 
 const SectionCaption = styled.p`
   font-weight: 600;
@@ -47,6 +48,26 @@ const IndexPage = () => (
             className="about-button" >
             Read more about me
           </Link>
+          <br />
+          <br />
+          <br />
+          <div className="icon-box">
+            <a href="https://www.linkedin.com/in/cecilia-benítez" target="_blank" className="link">
+              <div className="icon-individual-box">
+                <img src={require("../images/social/linkedin.png")} />
+              </div>
+            </a>
+            <a href="https://github.com/Ceci007" target="_blank" className="link">
+              <div className="icon-individual-box">
+                <img src={require("../images/social/github.png")} />
+              </div>
+            </a>
+            <a href="https://twitter.com/CeciDeveloper" target="_blank" className="link">
+              <div className="icon-individual-box">
+                <img src={require("../images/social/twitter.png")} />
+              </div>
+            </a>
+          </div>
           <div className="logos">
             <img src={sketch} width="50" />
             <img src={figma} width="50" />

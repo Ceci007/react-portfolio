@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
+import { Link, animateScroll as scroll } from "react-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const FooterMain = styled.div`
     margin: 0; 
@@ -105,7 +107,16 @@ const Footer = () => (
     <FooterMain>
         <FooterGroup>
             <Text>“Prototype and build apps with React.js and React Native”</Text>
-            <Button>Tweet</Button>
+            <Button>
+                <Link
+                to="/" 
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500} >
+                    Go Back To The Top
+                </Link>
+            </Button>
             <LinkGroup>
                 <a href="https://github.com/Ceci007" target="_blank"><FooterLink>Github</FooterLink></a>
                 <a href="https://twitter.com/CeciDeveloper" target="_blank"><FooterLink>Twitter</FooterLink></a>

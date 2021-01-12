@@ -1,0 +1,17 @@
+.icon-box {
+  background-color: transparent;
+  width: 80%;
+  height: 90px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.link {
+  background-color: transparent !important;
+  border: none !important;
+}
+
