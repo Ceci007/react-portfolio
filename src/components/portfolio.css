@@ -67,11 +67,15 @@
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .card {
+    width: 32rem;
+  }
 }
 
 .cards .card {
   position: relative;
-  width: 34rem;
+  width: 38rem;
   height: 50rem;
   margin: 3rem;
   box-shadow: 2rem 2rem 5rem rgba(0,0,0, 0.5);

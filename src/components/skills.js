@@ -14,7 +14,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">HTML</h3>
-                    <p>HTML5 modern practices and good semantic.</p>
+                    <p>HTML5 good semantic.</p>
                     <div class="skill">
                         <div class="percent">
                           <div class="progress" id="color-1" style={{width: "100%"}}></div>
@@ -113,7 +113,7 @@ function Skills(props) {
                   <p>Frontend Library</p>
                   <div class="skill">
                       <div class="percent">
-                        <div class="progress" id="color-6" style={{width: "95%"}}></div>
+                        <div class="progress" id="color-1" style={{width: "95%"}}></div>
                       </div>
                       <span class="value">95%</span>
                     </div>
@@ -129,7 +129,7 @@ function Skills(props) {
                 <p>Ruby programming language</p>
                 <div class="skill">
                     <div class="percent">
-                      <div class="progress" id="color-6" style={{width: "70%"}}></div>
+                      <div class="progress" id="color-2" style={{width: "70%"}}></div>
                     </div>
                     <span class="value">70%</span>
                   </div>
@@ -145,7 +145,7 @@ function Skills(props) {
                 <p>Ruby on Rails Framework</p>
                 <div class="skill">
                     <div class="percent">
-                      <div class="progress" id="color-6" style={{width: "72%"}}></div>
+                      <div class="progress" id="color-3" style={{width: "72%"}}></div>
                     </div>
                     <span class="value">72%</span>
                   </div>

@@ -103,7 +103,12 @@ const Copyright = styled.div`
     text-align: center;
 
     @media only screen and (max-width:  87.5em), only screen and (hover: none) {
-        width: 80%;
+        max-width: 80%;
+        box-sizing: border-box;
+    }
+
+    @media only screen and (max-width:  56.25em), only screen and (hover: none) {
+        max-width: 100%;
         box-sizing: border-box;
     }
 `
@@ -120,7 +125,7 @@ const Footer = () => (
                 offset={-70}
                 duration= {500} 
                 className="text">
-                    Go Back To The Top
+                    Home
                 </Link>
             </Button>
             <LinkGroup>
