@@ -16,6 +16,13 @@
   background: #161616;
 }
 
+.space {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .container::before {
   content: '';
   position: absolute;

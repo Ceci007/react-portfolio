@@ -21,12 +21,16 @@ function Portfolio(props) {
               <h2>01</h2>
               <h3>Dribbble Clone</h3>
               <p>
+                it's a Dribbble clone.
                 Made with Ruby and Ruby on Rails, with a SQL database and a S3 bucket to host images.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/dribbble-clone.png")} />
               </div>
-              <a href="https://microverse-dribbble.herokuapp.com/" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://microverse-dribbble.herokuapp.com/" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/dribbble-clone" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
@@ -34,26 +38,34 @@ function Portfolio(props) {
               <h2>02</h2>
               <h3>E-Commerce</h3>
               <p>
+                It's an E-Commerce site.
                 Made with React, Redux and Firebase to simulate an E-Commerce site with stripe integration.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/e-commerce.png")} />
               </div>
-              <a href="https://crwn-live.herokuapp.com" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://crwn-live.herokuapp.com" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/crwn-clothing" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
               <h2>03</h2>
-              <h3>Mobile market sale</h3>
+              <h3>Done With It</h3>
               <p>
+                It's a market place for mobile
                 Made with React-Native and Expo.
                 Open the link, download expo and scan the code.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/react-native.png")} />
               </div>
-              <a href="https://expo.io/@cecipeke/DoneWithIt?release-channel=staging" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://expo.io/@cecipeke/DoneWithIt?release-channel=staging" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/done-with-it" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
@@ -61,12 +73,16 @@ function Portfolio(props) {
               <h2>04</h2>
               <h3>Twitter Clone</h3>
               <p>
+                It's a twitter clone.
                 Made with a little of vanilla JavaScript and CSS.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/twitter-clone.jpg")} />
               </div>
-              <a href="https://ceci007.github.io/Twitter-Clone/" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://ceci007.github.io/Twitter-Clone/" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/Twitter-Clone" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
@@ -74,12 +90,16 @@ function Portfolio(props) {
               <h2>05</h2>
               <h3>Custom</h3>
               <p>
+                It's a theme.
                 a React.js theme styled from scratch.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/custom.jpg")} />
               </div>
-              <a href="https://ceci007.github.io/custom/" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://ceci007.github.io/custom/" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/custom" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
@@ -87,12 +107,16 @@ function Portfolio(props) {
               <h2>06</h2>
               <h3>Scoreboard</h3>
               <p>
+                It's a videogame scoreboard.
                 A scoreboard for a videogame made with React.js.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/scoreboard.png")} />
               </div>
-              <a href="https://ceci007.github.io/scoreboard/" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://ceci007.github.io/scoreboard/" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/scoreboard" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
           <Tilt className="card" options={options} >
@@ -100,12 +124,16 @@ function Portfolio(props) {
               <h2>07</h2>
               <h3>Trillo Site</h3>
               <p>
+                It's a website template.
                 just plain CSS, only to style the HTML.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/trillo.jpg")} />
               </div>
-              <a href="https://ceci007.github.io/trillo-responsive/" target="_blank">Live Demo</a>
+              <div className="space">
+                <a href="https://ceci007.github.io/trillo-responsive/" target="_blank">Live Demo</a>
+                <a href="https://github.com/Ceci007/trillo-responsive" target="_blank">GitHub</a>
+              </div>
             </div>
           </Tilt>
         </div>
