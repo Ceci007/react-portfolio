@@ -68,6 +68,11 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <div className="logos">
             <img src={sketch} width="50" />
             <img src={figma} width="50" />

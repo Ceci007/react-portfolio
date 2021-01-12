@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { Link, animateScroll as scroll } from "react-scroll";
 import ScrollAnimation from 'react-animate-on-scroll';
+import './footer.css';
 
 const FooterMain = styled.div`
     margin: 0; 
@@ -61,6 +62,10 @@ const Button = styled.button`
         box-shadow: 0 20px 40px rgba(0,0,0, 0.15);
         transform: translateY(-3px);
     }
+
+    &:focus {
+        outline: none;
+    }
 `
 
 const LinkGroup = styled.div`
@@ -109,19 +114,36 @@ const Footer = () => (
             <Text>“Prototype and build apps with React.js and React Native”</Text>
             <Button>
                 <Link
-                to="/" 
+                to="home" 
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration= {500} >
+                duration= {500} 
+                className="text">
                     Go Back To The Top
                 </Link>
             </Button>
             <LinkGroup>
                 <a href="https://github.com/Ceci007" target="_blank"><FooterLink>Github</FooterLink></a>
                 <a href="https://twitter.com/CeciDeveloper" target="_blank"><FooterLink>Twitter</FooterLink></a>
-                <a href="https://www.linkedin.com/in/cecilia-ben%C3%ADtez/" target="_blank"><FooterLink>Linkedin</FooterLink></a>
+                <a href="https://www.linkedin.com/in/cecilia-benítez" target="_blank"><FooterLink>Linkedin</FooterLink></a>
             </LinkGroup>
+            <form name="contact" method="POST" data-netlify="true" className="contacto">
+                <h2 className="title">Contact me</h2>
+                <p className="subtitle">Email me at: cecibenitezca@gmail.com</p>
+                <p>
+                <input type="text" name="name" placeholder="Name" className="input-form"/>  
+                </p>
+                <p>
+                <input type="email" name="email" placeholder="Email" className="input-form"/>
+                </p>
+                <p>
+                <textarea name="message" rows="6" placeholder="Enter your message" className="input-form"></textarea>
+                </p>
+                <div className="submit-box">
+                    <button type="submit">Send Email</button>
+                </div>
+            </form>
             <Copyright> © {new Date().getFullYear()}, for a better web</Copyright> 
         </FooterGroup>
     </FooterMain>

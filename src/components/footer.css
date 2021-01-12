@@ -1,0 +1,103 @@
+.text {
+  color: white;
+  font-weight: 600;
+}
+
+.title {
+  color: #9B51E0;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #9B51E0;
+  text-align: center;
+}
+
+.contacto {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+}
+
+.contacto p:not(:last-child) {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.input-form {
+  width: 90vw;
+  border: 3px solid #9B51E0;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Lato Light", sans-serif;
+  margin-top: 3rem;
+  border-radius: 5px;
+}
+
+.input-form:focus {
+  outline: none;
+}
+
+.input-form::-webkit-input-placeholder {
+  color: #9B51E0;
+  font-family: "Lato Light", sans-serif;
+  font-size: 1.8rem;
+}
+
+.copyright {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.submit-box {
+  justify-self: start;
+}
+
+button[type="submit"] {
+  border: 3px solid #9B51E0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #9B51E0;
+  font-family: "Lato Light", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  transition: all 0.5s;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  background-color: #9B51E0;
+  border: 3px solid #9B51E0;
+  color: white;
+}
+
+@media only screen and (max-width: 25em) /* 400px */ {
+  .contacto p i {
+    display: none;
+  }
+
+  .contacto {
+    padding: 2rem;
+  }
+
+  .submit-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 2rem;
+  }
+
+  .work-icons {
+    margin-right: 0rem;
+  }
+}
