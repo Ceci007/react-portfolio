@@ -1,6 +1,7 @@
-.text {
-  color: white;
-  font-weight: 600;
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {

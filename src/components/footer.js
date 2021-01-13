@@ -47,7 +47,7 @@ const Button = styled.button`
     font-size: 24px;
     display: flex;
     box-sizing: border-box;
-    color: white;
+    color: #fff;
     border: none;
     padding: 16px 60px;
     font-weight: 600;
@@ -116,17 +116,17 @@ const Copyright = styled.div`
 const Footer = () => (
     <FooterMain>
         <FooterGroup>
-            <Button>
-                <Link
+        <Link
                 to="home" 
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration= {500} 
-                className="text">
+                className="text-center">
+                <Button>
                     Home
-                </Link>
-            </Button>
+                </Button>
+            </Link>
             <LinkGroup>
                 <a href="https://github.com/Ceci007" target="_blank"><FooterLink>GitHub</FooterLink></a>
                 <a href="https://twitter.com/CeciDeveloper" target="_blank"><FooterLink>Twitter</FooterLink></a>

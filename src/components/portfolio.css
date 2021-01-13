@@ -110,24 +110,15 @@
   transition: 0.5s;
 }
 
-.cards .card .content h2 {
-  position: absolute;
-  top: -4rem;
-  right: 3rem;
-  font-size: 8em;
-  color: rgba(0, 0, 0, 0.05);
-  pointer-events: none;
-}
-
 .cards .card .content h3 {
   font-size: 1.8em;
-  color: rgba(0,0,0, 0.8);
+  color: #000;
   z-index: 1;
 }
 
 .cards .card .content p {
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.65);
+  color: #000;
   font-weight: 400;
 }
 

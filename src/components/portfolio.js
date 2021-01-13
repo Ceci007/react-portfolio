@@ -18,7 +18,6 @@ function Portfolio(props) {
         <div className="cards">
         <Tilt className="card" options={options} >
             <div className="content">
-              <h2>01</h2>
               <h3>Dribbble Clone</h3>
               <p>
                 This is a clone of the Dribbble website, made with Ruby and 
@@ -35,7 +34,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>02</h2>
               <h3>E-Commerce</h3>
               <p>
                 This is an E-Commerce site build with React, Redux, and Firebase 
@@ -52,7 +50,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>03</h2>
               <h3>Done With It</h3>
               <p>
                 This is a market place for mobile.<br />
@@ -70,7 +67,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>04</h2>
               <h3>Twitter Clone</h3>
               <p>
                 This is a Twitter clone build with a little vanilla JavaScript and CSS.
@@ -86,7 +82,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>05</h2>
               <h3>Custom</h3>
               <p>
                 This is a theme build with React.js and styled from scratch.
@@ -102,7 +97,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>06</h2>
               <h3>Scoreboard</h3>
               <p>
                 This is a videogame scoreboard build with React.js.
@@ -118,7 +112,6 @@ function Portfolio(props) {
           </Tilt>
           <Tilt className="card" options={options} >
             <div className="content">
-              <h2>07</h2>
               <h3>Trillo Site</h3>
               <p>
                 This is a website template built with CSS and using HTML for styling.
