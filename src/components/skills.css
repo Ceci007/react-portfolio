@@ -1,11 +1,4 @@
 /*------------------- SKILLS --------------------*/
-.skills {
-  width: 100%;
-  padding: 3rem;
-  background-color: #fff;
-  box-sizing: border-box;
-}
-
 .box-sizing {
   box-sizing: border-box;
 }
@@ -70,29 +63,6 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.skill {
-  position: relative;
-  display: flex;
-  margin: 2rem 0;
-  padding: 2.4rem 1rem 1.8rem;
-  background: linear-gradient(#616161 0%, #333 10%, #222);
-  border-radius: 0.8rem;
-  overflow: hidden;
-  border: 0.2rem solid #000;
-  transition: 0.5s;
-}
-
-.skill:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 10;
-}
-
 .skill .value {
   position: relative;
   width: 4rem;
@@ -101,61 +71,6 @@
   text-transform: uppercase;
   margin-left: 0.5rem;
 }
-
-.skill .percent {
-  position: relative;
-  width: 28rem;
-  height: 2rem;
-  margin: 0 1rem;
-  border-radius: 1rem;
-  background: #151515;
-  margin: 0;
-  box-shadow: inset 0 0 1rem #000;
-  overflow: hidden;
-}
-
-.skill .percent .progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 100%;
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: inset 0 0 0.2rem #000;
-  animation: skillbar 4s ease-in-out forwards infinite;
-}
-
-@keyframes skillbar {
-  from {
-    width: 0;
-  }
-}
-
-.skill .percent #color-1 {
-  background: linear-gradient(45deg, #1fe6ff, #673ab7);
-}
-
-.skill .percent #color-2 {
-  background: linear-gradient(45deg, #3bc0ff, #33ff00);
-}
-
-.skill .percent #color-3 {
-  background: linear-gradient(45deg, #ffee54, #ff00ca);
-}
-
-.skill .percent #color-4 {
-  background: linear-gradient(45deg, #22ffde, #2196f3);
-}
-
-.skill .percent #color-5 {
-  background: linear-gradient(45deg, #ffee54, red);
-}
-
-.skill .percent #color-6 {
-  background: linear-gradient(45deg, #ffee54, #33ff00);
-}
-
 
 @media only screen and (max-width: 25em) /* 400px */ {
   .skill-img-box {
@@ -313,7 +228,7 @@
 
 @keyframes progress-2 {
   to {
-    stroke-dasharray: 175;
+    stroke-dasharray: 159;
   }
 }
 

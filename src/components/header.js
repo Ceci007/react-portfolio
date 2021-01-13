@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserGraduate, faTh, faAward, faArchive } from '@fortawesome/free-solid-svg-icons'
+import { faUserGraduate, faTh, faComments, faArchive } from '@fortawesome/free-solid-svg-icons'
 import logo from "../images/logo-designcode.svg"
 import "./reset.css"
 import "./header.css";
@@ -41,6 +41,12 @@ class Header extends Component {
       offset={-70}
       duration= {500} ><img src={logo} width="30" /></Link>
       <Link
+        to="portfolio"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration= {500} ><button><FontAwesomeIcon icon={faArchive} className="nav-icon" /> Portfolio</button></Link>
+      <Link
         to="about-me"
         spy={true}
         smooth={true}
@@ -53,17 +59,11 @@ class Header extends Component {
         offset={-100}
         duration= {500} ><FontAwesomeIcon icon={faTh} className="nav-icon" /> Skills</Link>
       <Link
-        to="credentials"
+        to="contact"
         spy={true}
         smooth={true}
         offset={-100}
-        duration= {500} ><FontAwesomeIcon icon={faAward} className="nav-icon" /> credentials</Link>
-        <Link
-        to="portfolio"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration= {500} ><button><FontAwesomeIcon icon={faArchive} className="nav-icon" /> Portfolio</button></Link>
+        duration= {500} ><FontAwesomeIcon icon={faComments} className="nav-icon" /> Contact Me</Link>
     </div>
   </div>)
   }

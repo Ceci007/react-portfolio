@@ -36,7 +36,7 @@ const IndexPage = () => (
     <ScrollAnimation animateIn="fadeInUp">
       <div className="Hero" id="home">
         <div className="HeroGroup">
-          <h1>Frontend Engineer <br /><span>React Developer</span></h1>
+          <h1>Cecilia Benitez, Front-end Engineer <br /><span>React Developer</span></h1>
           <p>Complete app development, with the best tools and design systems</p><br />
           <br />
           <Link
@@ -84,9 +84,12 @@ const IndexPage = () => (
         </div>
       </div>   
     </ScrollAnimation>
+    <div id="portfolio">
+      <Portfolio />
+    </div>
     <ScrollAnimation animateIn="fadeInUp">
       <div className="Cards" id="about-me">
-        <h2>About me info, you can read more about me on my resume</h2>
+        <h2>About me</h2>
         <AboutMe />
       </div>
     </ScrollAnimation>
@@ -94,12 +97,12 @@ const IndexPage = () => (
       image={require('../images/hero-2.jpg')}
       logo={require('../images/logo-react.png')}
       title="What is React?"
-      text={`React (also known as React.js) is an open-source, front end, JavaScript library for building user interfaces or UI components. 
+      text={`React (also known as React.js) is an open-source, front-end, JavaScript library for building user interfaces or UI components. 
       It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page 
       or mobile applications.`}
     />
     <div id="skills">
-      <SectionCaption>My Skills</SectionCaption>
+      <h2 className="skills-title">My Skills</h2>
       <ScrollAnimation animateIn="fadeInUp">
         <Skills />
       </ScrollAnimation>
@@ -108,9 +111,6 @@ const IndexPage = () => (
       <ScrollAnimation animateIn="fadeInUp" >
         <CredentialsCarousel />
       </ScrollAnimation>
-    </div>
-    <div id="portfolio">
-      <Portfolio />
     </div>
   </Layout>
 )

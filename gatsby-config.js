@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     description: 'Best tools and design systems. Prototype and build apps with React.Js and React Native',
-    keywords: 'react course, react for designers, ios development, sketch app, swift app course, arkit 2, after effects, create sketch plugin',
+    keywords: 'react.js, react native, javascript, sass, css, html, ruby, ruby on rails',
     author: `@gatsbyjs`,
   },
   plugins: [

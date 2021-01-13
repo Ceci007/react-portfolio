@@ -21,8 +21,8 @@ function Portfolio(props) {
               <h2>01</h2>
               <h3>Dribbble Clone</h3>
               <p>
-                it's a Dribbble clone<br />
-                Made with Ruby and Ruby on Rails, with a SQL database and an S3 bucket to host images
+                This is a clone of the Dribbble website, made with Ruby and 
+                Ruby on Rails, including an SQL database and an S3 bucket to host images.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/dribbble-clone.png")} />
@@ -38,8 +38,8 @@ function Portfolio(props) {
               <h2>02</h2>
               <h3>E-Commerce</h3>
               <p>
-                It's an E-Commerce site<br />
-                Made with React, Redux, and Firebase to simulate an E-Commerce site with stripe integration
+                This is an E-Commerce site build with React, Redux, and Firebase 
+                to simulate an E-Commerce site with stripe integration.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/e-commerce.png")} />
@@ -55,9 +55,9 @@ function Portfolio(props) {
               <h2>03</h2>
               <h3>Done With It</h3>
               <p>
-                It's a market place for mobile<br />
-                Made with React-Native and Expo<br />
-                Open the link, download the expo app, and scan the code
+                This is a market place for mobile.<br />
+                Build with React-Native and Expo.<br />
+                Open the link, download the expo app, and scan the code.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/react-native.png")} />
@@ -73,8 +73,7 @@ function Portfolio(props) {
               <h2>04</h2>
               <h3>Twitter Clone</h3>
               <p>
-                It's a Twitter clone<br />
-                Made with a little vanilla JavaScript and CSS
+                This is a Twitter clone build with a little vanilla JavaScript and CSS.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/twitter-clone.jpg")} />
@@ -90,8 +89,7 @@ function Portfolio(props) {
               <h2>05</h2>
               <h3>Custom</h3>
               <p>
-                It's a theme.<br />
-                a React.js theme styled from scratch
+                This is a theme build with React.js and styled from scratch.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/custom.jpg")} />
@@ -107,8 +105,7 @@ function Portfolio(props) {
               <h2>06</h2>
               <h3>Scoreboard</h3>
               <p>
-                It's a videogame scoreboard<br />
-                A scoreboard for a videogame made with React.js
+                This is a videogame scoreboard build with React.js.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/scoreboard.png")} />
@@ -124,8 +121,7 @@ function Portfolio(props) {
               <h2>07</h2>
               <h3>Trillo Site</h3>
               <p>
-                It's a website template<br />
-                just plain CSS, only to style the HTML
+                This is a website template built with CSS and using HTML for styling.
               </p>
               <div className="img-box">
                 <img src={require("../images/projects/trillo.jpg")} />

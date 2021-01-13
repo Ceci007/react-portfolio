@@ -116,7 +116,6 @@ const Copyright = styled.div`
 const Footer = () => (
     <FooterMain>
         <FooterGroup>
-            <Text>“Prototype and build apps with React.js and React Native”</Text>
             <Button>
                 <Link
                 to="home" 
@@ -129,13 +128,13 @@ const Footer = () => (
                 </Link>
             </Button>
             <LinkGroup>
-                <a href="https://github.com/Ceci007" target="_blank"><FooterLink>Github</FooterLink></a>
+                <a href="https://github.com/Ceci007" target="_blank"><FooterLink>GitHub</FooterLink></a>
                 <a href="https://twitter.com/CeciDeveloper" target="_blank"><FooterLink>Twitter</FooterLink></a>
-                <a href="https://www.linkedin.com/in/cecilia-benítez" target="_blank"><FooterLink>Linkedin</FooterLink></a>
+                <a href="https://www.linkedin.com/in/cecilia-benítez" target="_blank"><FooterLink>LinkedIn</FooterLink></a>
             </LinkGroup>
-            <form name="contact" method="POST" data-netlify="true" className="contacto">
+            <form name="contact" method="POST" data-netlify="true" className="contacto" id="contact">
                 <h2 className="title">Contact me</h2>
-                <p className="subtitle">Email me at: cecibenitezca@gmail.com</p>
+                <p className="subtitle">Email me at cecibenitezca@gmail.com</p>
                 <p>
                 <input type="text" name="name" placeholder="Name" className="input-form"/>  
                 </p>

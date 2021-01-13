@@ -14,14 +14,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">HTML</h3>
-                    <p>HTML5 good semantic.</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-1" style={{width: "100%"}}></div>
-                        </div>
-                        <span class="value">100%</span>
-                    </div>
-                  </div>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -30,14 +23,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">CSS</h3>
-                    <p>modern CSS best practices</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-2" style={{width: "100%"}}></div>
-                        </div>
-                        <span class="value">100%</span>
-                    </div>
-                  </div>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -46,14 +32,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">JavaScript</h3>
-                    <p>JavaScript programming language</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-3" style={{width: "90%"}}></div>
-                        </div>
-                        <span class="value">90%</span>
-                      </div>
-                  </div>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -61,15 +40,8 @@ function Skills(props) {
                   <img src={require("../images/skills/flexbox-cssgrid.png")} />
                 </div>
                 <div class="skill-card-body">
-                    <h3 class="skills-heading">Advanced CSS</h3>
-                    <p>Flexbox and CSS Grid</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-4" style={{width: "95%"}}></div>
-                        </div>
-                        <span class="value">95%</span>
-                      </div>
-                  </div>
+                    <h3 class="skills-heading">Flexbox and CSS grid</h3>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -78,14 +50,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">ES6 onwards</h3>
-                    <p>modern JavaScript</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-5" style={{width: "90%"}}></div>
-                        </div>
-                        <span class="value">90%</span>
-                      </div>
-                  </div>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -94,14 +59,7 @@ function Skills(props) {
                 </div>
                 <div class="skill-card-body">
                     <h3 class="skills-heading">Sass</h3>
-                    <p>CSS preprocessor</p>
-                    <div class="skill">
-                        <div class="percent">
-                          <div class="progress" id="color-6" style={{width: "80%"}}></div>
-                        </div>
-                        <span class="value">80%</span>
-                      </div>
-                  </div>
+                </div>
             </div>
 
             <div class="skill-card">
@@ -110,14 +68,7 @@ function Skills(props) {
               </div>
               <div class="skill-card-body">
                   <h3 class="skills-heading">React</h3>
-                  <p>Frontend Library</p>
-                  <div class="skill">
-                      <div class="percent">
-                        <div class="progress" id="color-1" style={{width: "95%"}}></div>
-                      </div>
-                      <span class="value">95%</span>
-                    </div>
-                </div>
+              </div>
           </div>
 
           <div class="skill-card">
@@ -126,14 +77,7 @@ function Skills(props) {
             </div>
             <div class="skill-card-body">
                 <h3 class="skills-heading">Ruby</h3>
-                <p>Ruby programming language</p>
-                <div class="skill">
-                    <div class="percent">
-                      <div class="progress" id="color-2" style={{width: "70%"}}></div>
-                    </div>
-                    <span class="value">70%</span>
-                  </div>
-              </div>
+            </div>
           </div> 
 
           <div class="skill-card">
@@ -142,16 +86,8 @@ function Skills(props) {
             </div>
             <div class="skill-card-body">
                 <h3 class="skills-heading">Ruby on Rails</h3>
-                <p>Ruby on Rails Framework</p>
-                <div class="skill">
-                    <div class="percent">
-                      <div class="progress" id="color-3" style={{width: "72%"}}></div>
-                    </div>
-                    <span class="value">72%</span>
-                  </div>
-              </div>
+            </div>
           </div> 
-
         </div>
         </section>
         
@@ -200,7 +136,7 @@ function Skills(props) {
                       <FontAwesomeIcon icon={faRocket} />
                   </div>
                   <div class="progress-content">
-                    <div class="progress__value">94</div>
+                    <div class="progress__value">90</div>
                     <div class="progress__text">English</div>
                   </div>
                 </div>
@@ -226,7 +162,7 @@ function Skills(props) {
                     </div>
                     <div class="progress-content">
                       <div class="progress__value">52</div>
-                      <div class="progress__text">Italian</div>
+                      <div class="progress__text">Guarani</div>
                     </div>
                   </div>
               </div>
