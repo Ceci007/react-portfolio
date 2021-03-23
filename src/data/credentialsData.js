@@ -29,14 +29,14 @@
   },
   {
     id: "8",
-    img: "../images/credentials/javascript.jpg"
+    img: "https://github.com/Ceci007/images/blob/master/js-microverse.jpg?raw=true"
   },
   {
     id: "9",
-    img: "../images/credentials/react.jpg"
+    img: "https://github.com/Ceci007/images/blob/master/react-microverse.jpg?raw=true"
   },
   {
     id: "10",
-    img: "../images/credentials/software-developer.jpg"
+    img: "https://github.com/Ceci007/images/blob/master/software-developer-program.jpg?raw=true"
   }
 ];
