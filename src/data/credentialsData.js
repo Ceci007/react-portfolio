@@ -26,5 +26,17 @@
   {
     id: "7",
     img: "../images/credentials/Ruby.jpg"
+  },
+  {
+    id: "8",
+    img: "../images/credentials/javascript.jpg"
+  },
+  {
+    id: "9",
+    img: "../images/credentials/react.jpg"
+  },
+  {
+    id: "10",
+    img: "../images/credentials/software-developer.jpg"
   }
 ];
