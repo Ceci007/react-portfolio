@@ -12,7 +12,7 @@ function AboutMe(props) {
               <div class="ceci-img-box">
                 <img src={require('../images/professional-picture.jpg')} alt="Cecilia Benitez" />
               </div>
-              <span className="name">Cecilia Benítez</span>
+              <span className="name">Ceci Benítez</span>
               <FontAwesomeIcon icon={faHeartbeat} className="mi-top-i" />
             </div>
             <div class="sobre-mi__boxes">
